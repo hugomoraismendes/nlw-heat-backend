@@ -1,16 +1,15 @@
-# Autenticação com JWT
+# NLW-heat-backend com JWT
 
-yarn prisma studio
-yarn prisma migration
-
-Projeto desenvolvido durante a NLW05 da trilha Node.JS na RockerSeat. Este mini projeto tem como objetivo abordar o uso de Sockets para fazer comunicação entre Cliente e Servidor.
+Projeto desenvolvido durante a NLW-Heat da trilha Node.JS na RocketSeat. Este mini projeto tem como objetivo abordar o uso de Sockets para fazer comunicação entre Cliente e Servidor, as aplicações nlw-heat-front ou nlw-heat-mobile abrem comunicação com o server para receber o dado através do socket.
 
 ## Projeto desenvolvido usando as seguintes tecnologias
 
--   Node.JS (14.16.1);
+-   Node.JS;
 -   TypeScript;
--   Yarn; e
--   ORM.
+-   Yarn;
+-   Prisma;
+-   Socket; e
+-   SqLite.
 
 ### Configurações Iniciais
 
@@ -30,7 +29,7 @@ yarn install
 O projeto usa o banco de dados SqLite, para criá-lo execute o comando abaixo:
 
 ```sh
-yarn typeorm migration:run
+yarn prisma migration
 ```
 
 Após a execução do comando, observe na pasta "src/database/" que agora terá um arquivo com o nome database.sqlite
@@ -40,9 +39,14 @@ Após a execução do comando, observe na pasta "src/database/" que agora terá 
 Para executar o projeto acesse o terminal e rode o comando abaixo:
 
 ```sh
-yarn dev
+yarn start
 ```
 
-Ao executar o comando acima no terminal, uma mensagem será exibida "Server started on 3000"
+O comando abaixo abre uma interface web que permitir navegar no banco de dados.
+
+```sh
+yarn prisma studio
+```
+Ao executar o comando acima no terminal, uma mensagem será exibida "Server started on 4000"
 
 > Outros scripts podem ser encontrados no arquivo package.json
