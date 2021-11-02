@@ -1,4 +1,4 @@
-# NLW-heat-backend com JWT
+# NLW-heat-backend
 
 Projeto desenvolvido durante a NLW-Heat da trilha Node.JS na RocketSeat. Este mini projeto tem como objetivo abordar o uso de Sockets para fazer comunicação entre Cliente e Servidor, as aplicações nlw-heat-front ou nlw-heat-mobile abrem comunicação com o server para receber o dado através do socket.
 
